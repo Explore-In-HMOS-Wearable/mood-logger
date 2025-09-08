@@ -1,0 +1,37 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Mood Logger"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Mood Logger"
+    },
+    {
+      "name": "select_mood",
+      "value": "Select Mood"
+    },
+    {
+      "name": "ready",
+      "value": "Ready"
+    },
+    {
+      "name": "weekly_chart",
+      "value": "Weekly Chart"
+    },
+    {
+      "name": "feel_today",
+      "value": "How do you feel today?"
+    },
+    {
+      "name": "weekly_mood_title",
+      "value": "Here is your weekly mood!"
+    }
+  ]
+}
+
