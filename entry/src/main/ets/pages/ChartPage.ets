@@ -91,7 +91,6 @@ struct ChartPage {
   }
 
   private getMoodColor(mood: MoodEnum): Color {
-    console.log(`MoodEnum:: ${mood}`)
     switch (mood) {
       case MoodEnum.HAPPY:
         return Color.Green;

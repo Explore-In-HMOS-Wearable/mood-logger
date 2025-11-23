@@ -86,7 +86,7 @@ struct MoodPage {
       })
       .catch((err: BusinessError) => {
         Logger.error(`Failed to get mood for today. Code: ${err.code}, message: ${err.message}`);
-        if (err.code == 15100004) {
+        if (err.code === 15100004) {
           KvStoreManager.getInstance().getStore()!.put(today, mood)
             .then(() => {
               console.info(`Successfully saved mood for ${today}: ${mood}`);
@@ -118,7 +118,7 @@ struct MoodPage {
       })
       .catch((err: BusinessError) => {
         Logger.error(`Failed to get mood for today. Code: ${err.code}, message: ${err.message}`);
-        if (err.code == 15100004) {
+        if (err.code === 15100004) {
           this.statusMessage = 'Select your mood!';
         } else {
           this.statusMessage =
