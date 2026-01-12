@@ -152,7 +152,7 @@ struct MoodPage {
               .onClick(() => {
                 this.selectedMood = item[1];
               })
-            }, (item: [string, string], index: number) => `${item[1]}_${index}`)
+            }, (item: [string, string]) => `${item[1]}`)
           }
           .width(SizeConstants.FULL_PERCENT)
           .justifyContent(FlexAlign.SpaceBetween)

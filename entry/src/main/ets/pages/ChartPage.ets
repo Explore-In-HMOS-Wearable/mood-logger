@@ -10,7 +10,7 @@ import {
   ArcListItem,
   ArcListAttribute,
   ArcListItemAttribute,
-  LengthMetrics,
+  LengthMetrics
 } from '@kit.ArkUI';
 
 interface WeeklyMood {
@@ -66,9 +66,9 @@ struct ChartPage {
 
     const result: Array<WeeklyMood> = [];
     const today = new Date();
+    const date = new Date();
 
     for (let i = 6; i >= 0; i--) {
-      const date = new Date(today);
       date.setDate(today.getDate() - i);
       const dateKey = date.toISOString().split('T')[0];
 

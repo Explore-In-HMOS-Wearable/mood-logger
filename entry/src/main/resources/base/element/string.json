@@ -31,6 +31,10 @@
     {
       "name": "weekly_mood_title",
       "value": "Here is your weekly mood!"
+    },
+    {
+      "name": "mood_logger",
+      "value": "Mood Logger"
     }
   ]
 }

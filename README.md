@@ -65,7 +65,7 @@ entry/src/main/ets/
 
 - Huawei Watch 5
 
-# LICENSE
+# License
 
 **Mood Logger** is distributed under the terms of the MIT License.
 See the [license](/LICENSE) for more information.

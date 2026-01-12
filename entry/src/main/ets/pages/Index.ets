@@ -13,11 +13,11 @@ import { ChartPageBuilder, CHART_PAGE } from './ChartPage';
 struct Index {
   @Provide('NavPathStack') pageStack: NavPathStack = new NavPathStack()
   private context = this.getUIContext().getHostContext() as common.UIAbilityContext;
-  @State reminderTitle: string = 'Mood Logger';
-  @State reminderContent: string = 'Select your mood';
-  @State reminderTime: number = 5;
-  @State showInputForm: boolean = false;
-  @State notificationId: number = 1000;
+  reminderTitle: string = 'Mood Logger';
+  reminderContent: string = 'Select your mood';
+  reminderTime: number = 5;
+  showInputForm: boolean = false;
+  notificationId: number = 1000;
 
   aboutToAppear() {
     this.openNotificationPermission();
@@ -84,7 +84,7 @@ struct Index {
         abilityName: 'EntryAbility',
         uri: 'pages/Index'
       },
-      ringDuration: 3,
+      ringDuration: 3
     };
 
     Logger.info(`Publishing reminder with ID: ${this.notificationId}`);
